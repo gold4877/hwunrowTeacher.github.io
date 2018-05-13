@@ -24,10 +24,32 @@
     <!-- Custom styles for this template -->
     <link href="css/freelancer.min.css" rel="stylesheet">
     <style>
-      .dropdown-menu li:hover .sub-menu {
-        visibility: visible;
+      .dropdown-menu.columns-2 {
+        min-width: 200px;
       }
-      
+      .multi-column-dropdown {
+      	list-style: none;
+        margin: 0px;
+        padding: 0px;
+      }
+      .multi-column-dropdown li a {
+      	display: block;
+      	clear: both;
+      	font-size: 1.3em;
+      	color: #333;
+      	white-space: normal;
+      }
+      .multi-column-dropdown li a:hover {
+      	text-decoration: none;
+      	color: #262626;
+      	background-color: #999;
+      }
+      @media (max-width: 767px) {
+    	.dropdown-menu.multi-column {
+    		min-width: 240px !important;
+    		overflow-x: hidden;
+    	}
+}
     </style>
   </head>
 
@@ -44,32 +66,41 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="dropdown nav-item mx-0 mx-lg-1">
-             <a class="dropdown-toggle" data-toggle="dropdown">Personal Pages
-              <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-               <li><a href="./personal_pages/HanYongTeacher/index.html">Han Yong Teacher</a></li>
-               <li><a href="./personal_pages/공민우/index.html">공민우</a></li>
-               <li><a href="./personal_pages/권순재/index.html">권순재</a></li>
-               <li><a href="./personal_pages/김대열/index.html">김대열</a></li>
-               <li><a href="./personal_pages/김동주/index.html">김동주</a>  </li>
-               <li><a href="./personal_pages/김민성/index.html">김민성</a></li>
-               <li><a href="./personal_pages/김병욱/index.html">김병욱</a></li>
-               <li><a href="./personal_pages/김재환/index.html">김재환</a></li>
-               <li><a href="./personal_pages/김지태/index.html">김지태</a></li>
-               <li><a href="./personal_pages/문성조/index.html">문성조</a></li>
-               <li><a href="./personal_pages/박명수/index.html">박명수</a></li>
-               <li><a href="./personal_pages/박소현/index.html">박소현</a></li>
-               <li><a href="./personal_pages/송유준/index.html">송유준</a></li>
-               <li><a href="./personal_pages/오금빈/index.html">오금빈</a></li>
-               <li><a href="./personal_pages/이신주/index.html">이신주</a></li>
-               <li><a href="./personal_pages/이혁/index.html">이혁</a></li>
-               <li><a href="./personal_pages/정민재/index.html">정민재</a></li>
-               <li><a href="./personal_pages/정지영/index.html">정지영</a></li>
-               <li><a href="./personal_pages/조민수/index.html">조민수</a></li>
-               <li><a href="./personal_pages/최정완/index.html">최정완</a></li>
-               <li><a href="./personal_pages/황준서/index.html">황준서</a></li>
-              </ul>
-            </li>
+             <a class="dropdown-toggle" data-toggle="dropdown" style="color:#18bc9c; cursor: pointer;">Personal Pages
+              <b class="caret"></b></a>
+              <ul class="dropdown-menu columns-2">
+               <div class="row">
+                 <div class="col-sm-6">
+                   <ul class="multi-column-dropdown">
+                     <li><a href="./personal_pages/공민우/index.html">공민우</a></li>
+                     <li><a href="./personal_pages/권순재/index.html">권순재</a></li>
+                     <li><a href="./personal_pages/김대열/index.html">김대열</a></li>
+                     <li><a href="./personal_pages/김동주/index.html">김동주</a>  </li>
+                     <li><a href="./personal_pages/김민성/index.html">김민성</a></li>
+                     <li><a href="./personal_pages/김병욱/index.html">김병욱</a></li>
+                     <li><a href="./personal_pages/김재환/index.html">김재환</a></li>
+                     <li><a href="./personal_pages/김지태/index.html">김지태</a></li>
+                     <li><a href="./personal_pages/문성조/index.html">문성조</a></li>
+                     <li><a hrf="./personal_pages/박명수/index.html">박명수</a></li>
+                     <li><a href="./personal_pages/박소현/index.html">박소현</a></li>
+                   </ul>
+                </div>
+              <div class="col-sm-6">
+                <ul class="multi-column-dropdown">
+                 <li><a href="./personal_pages/송유준/index.html">송유준</a></li>
+                 <li><a href="./personal_pages/오금빈/index.html">오금빈</a></li>
+                 <li><a href="./personal_pages/이신주/index.html">이신주</a></li>
+                 <li><a href="./personal_pages/이혁/index.html">이혁</a></li>
+                 <li><a href="./personal_pages/정민재/index.html">정민재</a></li>
+                 <li><a href="./personal_pages/정지영/index.html">정지영</a></li>
+                 <li><a href="./personal_pages/조민수/index.html">조민수</a></li>
+                 <li><a href="./personal_pages/최정완/index.html">최정완</a></li>
+                 <li><a href="./personal_pages/황준서/index.html">황준서</a></li>
+                 <li><a href="./personal_pages/HanYongTeacher/index.html">HYW</a></li>
+               </ul>
+             </div>
+           </ul>
+         </li>
           </ul>
         </div>
       </div>
